@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginTop="30dp"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/toyImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toys Name"
+            android:id="@+id/toyName"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"></TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toys Price"
+            android:id="@+id/toyPrice"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Update Quantity:"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/quantityMinus"
+                android:backgroundTint="@color/mainColor"
+                android:text="-"
+                android:textSize="23dp"
+                android:textColor="@color/white"></Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/quantity"
+                android:textColor="@color/black"
+                android:textSize="25dp"></TextView>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/quantityPlus"
+                android:backgroundTint="@color/mainColor"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="23dp"></Button>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Cart"
+            android:id="@+id/btnUpdateCart"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/mainColor"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="50dp"></Button>
+
+    </LinearLayout>
+
+
+</ScrollView>

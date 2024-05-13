@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Toy..."
+        android:textSize="30dp"
+        android:textColor="@color/mainColor"
+        android:gravity="center">
+    </TextView>
+
+    <EditText
+        android:hint="Enter Toy Brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="15dp"
+        android:id="@+id/formToyBrand"
+        android:layout_marginTop="50dp"></EditText>
+
+    <EditText
+        android:hint="Enter Toy Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="15dp"
+        android:id="@+id/formToyName"
+        android:layout_marginTop="10dp"></EditText>
+
+    <EditText
+        android:hint="Enter Toy Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="15dp"
+        android:id="@+id/formToyDescription"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:lines="6"
+        android:scrollHorizontally="false"
+        android:layout_marginTop="10dp"></EditText>
+
+
+    <EditText
+        android:hint="Enter Toy Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="15dp"
+        android:id="@+id/formToyImage"
+        android:layout_marginTop="10dp"></EditText>
+
+    <EditText
+        android:hint="Enter Toy Price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="15dp"
+        android:id="@+id/formToyPrice"
+        android:layout_marginTop="10dp"></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textSize="18dp"
+        android:backgroundTint="@color/mainColor"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:id="@+id/formAddButton"
+        android:layout_marginHorizontal="140dp"></Button>
+</androidx.appcompat.widget.LinearLayoutCompat>

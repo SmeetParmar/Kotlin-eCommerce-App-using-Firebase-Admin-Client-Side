@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainColor"
+            android:text="CheckOut Form"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Personal Details"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"></TextView>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/firstName"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_height="wrap_content"
+                android:hint="First Name"></EditText>
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"></EditText>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/mobileNumber"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Mobile Number"></EditText>
+
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"></EditText>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"></EditText>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:hint="City"></EditText>
+
+            <EditText
+                android:id="@+id/province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:hint="Province"></EditText>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:hint="Country"></EditText>
+            <EditText
+                android:id="@+id/postalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:hint="Postal Code"></EditText>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card Details"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/cardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Card Number (################)"></EditText>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/expiryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:hint="Expiry Date (MM/YY)"></EditText>
+            <EditText
+                android:id="@+id/securityCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:inputType="phone"
+                android:hint="Security Code (***)"></EditText>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <EditText
+            android:id="@+id/cardHolderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Holder Name"></EditText>
+
+        <Button
+            android:id="@+id/placeOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/mainColor"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="90dp"></Button>
+
+    </LinearLayout>
+
+</ScrollView>

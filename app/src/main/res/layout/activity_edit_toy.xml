@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Toy..."
+        android:textSize="30dp"
+        android:textColor="@color/mainColor"
+        android:gravity="center">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="15dp"
+        android:id="@+id/formToyBrand"
+        android:layout_marginTop="50dp"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="15dp"
+        android:id="@+id/formToyName"></EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="15dp"
+        android:id="@+id/formToyDescription"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:lines="6"
+        android:scrollHorizontally="false"
+        android:layout_marginTop="10dp"></EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="15dp"
+        android:id="@+id/formToyImage"
+        android:layout_marginTop="10dp"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="15dp"
+        android:id="@+id/formToyPrice"
+        android:layout_marginTop="10dp"></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/mainColor"
+        android:textColor="@color/white"
+        android:id="@+id/formUpdateButton"
+        android:layout_marginHorizontal="90dp"></Button>
+</androidx.appcompat.widget.LinearLayoutCompat>
